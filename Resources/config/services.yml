@@ -1,0 +1,7 @@
+services:
+    ist1.twig.content:
+        class: Ist1\ContentBundle\Twig\ContentExtension
+        arguments: ['@doctrine.orm.entity_manager', '@request_stack']
+        public: false
+        tags:
+            - { name: twig.extension }
